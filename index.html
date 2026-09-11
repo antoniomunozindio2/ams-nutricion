@@ -1,121 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AMS Nutrición - Nutrición para Mujeres 50+</title>
-  <meta name="description" content="Asesoría nutricional personalizada para mujeres 50+. Recupera tu energía, pierde peso de forma sostenible. Ciencia y empatía real." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#A10C63',dark:'#7A0A4B',light:'#D72D74'},ink:'#1D283A',muted:'#4B5768'}}}}</script>
-  <style>
-    html{scroll-behavior:smooth}
-    body{font-family:Inter,system-ui,sans-serif;background:#F8FAFC;color:#1D283A}
-    .hero-bg{background:radial-gradient(ellipse 80% 70% at 50% 0%,#fce7f3 0%,#F8FAFC 62%)}
-    .pink-band{background:linear-gradient(180deg,#fdf2f8,#fce7f3)}
-    .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-    .faq-a.open{max-height:900px}
-    .slide{display:none}
-    .slide.active{display:block}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AMS Nutrición - Nutrición para Mujeres 50+</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#A10C63',dark:'#7A0A4B',light:'#D72D74'},ink:'#1D283A',muted:'#4B5768'}}}}</script>
+<style>html{scroll-behavior:smooth}body{font-family:Inter,system-ui,sans-serif;background:#F8FAFC;color:#1D283A}.hero-bg{background:radial-gradient(ellipse 80% 70% at 50% 0%,#fce7f3 0%,#F8FAFC 62%)}.pink-band{background:linear-gradient(180deg,#fdf2f8,#fce7f3)}.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}.faq-a.open{max-height:900px}.slide{display:none}.slide.active{display:block}</style>
 </head>
 <body>
 <header class="sticky top-0 z-50 bg-[#F8FAFC]/95 backdrop-blur border-b">
-  <div class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between">
-    <a href="#inicio" class="text-[22px] font-extrabold text-brand">AMS Nutrición</a>
-    <nav class="hidden md:flex gap-8 text-[15px] text-muted">
-      <a href="#inicio">Inicio</a>
-      <a href="#diferenciacion">Nuestra Diferencia</a>
-      <a href="#planes">Planes</a>
-      <a href="#faq">Preguntas Frecuentes</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a href="https://wa.me/34689849120?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20los%20planes%20de%20AMS%20Nutrici%C3%B3n" class="bg-brand text-white text-sm font-semibold px-5 py-2.5 rounded-full">Contactar</a>
-  </div>
-</header>
-<section id="inicio" class="hero-bg">
-  <div class="max-w-4xl mx-auto px-5 pt-20 pb-24 text-center">
-    <h1 class="text-[40px] md:text-[56px] font-extrabold leading-[1.08]">Finalmente, un Nutricionista que Entiende <span class="text-brand">Por Qué tu Cuerpo Ya No Responde Como Antes</span></h1>
-    <p class="mt-7 text-lg text-muted max-w-2xl mx-auto">Recupera tu energía, pierde peso de forma sostenible y siéntete tú misma de nuevo. Sin dietas imposibles. Sin recetas complicadas. Solo ciencia y empatía real.</p>
-    <a href="https://wa.me/34689849120?text=Hola!%20Quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20con%20AMS%20Nutrici%C3%B3n" class="mt-9 inline-flex bg-brand text-white font-semibold px-8 py-3.5 rounded-full">Agenda tu Valoración Gratuita</a>
-    <p class="mt-3 text-sm italic text-muted">*La mayoría de mis clientas comienzan con el Plan Trimestral</p>
-  </div>
-</section>
-<section class="py-20">
-  <div class="max-w-3xl mx-auto px-5 text-center">
-    <h2 class="text-3xl md:text-[44px] font-extrabold">Por Qué Especialicé mi Consulta en Mujeres <span class="text-brand">50+</span></h2>
-    <p class="mt-8 text-muted text-lg">Después de 10 años como dietista y 5 en entorno hospitalario, descubrí algo frustrante:</p>
-    <p class="mt-5 font-medium text-lg">Las mismas estrategias nutricionales que funcionaban para hombres y mujeres jóvenes, simplemente no daban resultados con mujeres en menopausia.</p>
-    <p class="mt-5 text-muted text-lg">No era falta de voluntad. No era falta de esfuerzo. Era falta de comprensión sobre cómo cambia radicalmente el metabolismo femenino después de los 50.</p>
-  </div>
-  <div class="max-w-5xl mx-auto px-5 mt-16">
-    <h3 class="text-center text-2xl font-bold mb-8">Mi Formación Especializada</h3>
-    <div class="grid md:grid-cols-3 gap-5">
-      <div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">Máster en Obesidad y TCA</h4><p class="mt-3 text-sm text-muted">Me especialicé en entender por qué el cuerpo se resiste y cómo trabajar CON él, no contra él. Especialmente durante cambios hormonales.</p></div>
-      <div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">Máster en Nutrición Deportiva</h4><p class="mt-3 text-sm text-muted">Domino la preservación muscular, crítica después de los 50 para mantener metabolismo, fuerza y autonomía.</p></div>
-      <div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">10 años de experiencia clínica</h4><p class="mt-3 text-sm text-muted">He trabajado con más de 300 pacientes. Entiendo que cada mujer es única, pero los patrones hormonales son predecibles y tratables.</p></div>
-    </div>
-  </div>
-  <div class="max-w-4xl mx-auto px-5 mt-12">
-    <div class="bg-white rounded-3xl p-8 border">
-      <h3 class="text-center text-2xl font-bold mb-8">Mi Promesa</h3>
-      <div class="grid sm:grid-cols-2 gap-4 text-left">
-        <div class="bg-slate-50 rounded-2xl p-5"><div class="font-semibold">Planes que encajan en tu vida real</div><div class="text-sm text-muted">Recetas de máximo 20 minutos</div></div>
-        <div class="bg-slate-50 rounded-2xl p-5"><div class="font-semibold">Explicaciones claras</div><div class="text-sm text-muted">Entiende qué le pasa a tu cuerpo</div></div>
-        <div class="bg-slate-50 rounded-2xl p-5"><div class="font-semibold">Ajustes constantes</div><div class="text-sm text-muted">Porque tu metabolismo es único</div></div>
-        <div class="bg-slate-50 rounded-2xl p-5"><div class="font-semibold">Cero juicios, 100% empatía</div><div class="text-sm text-muted">Un espacio seguro para tu salud</div></div>
-      </div>
-    </div>
-    <div class="mt-6 rounded-3xl p-8 text-center border border-pink-100 pink-band">
-      <p class="text-xl font-bold">No voy a darte otra dieta genérica.</p>
-      <p class="text-xl font-bold text-brand mt-1">Voy a darte el mapa de cómo funciona TU cuerpo ahora.</p>
-    </div>
-    <div class="text-center mt-8"><a href="https://wa.me/34689849120?text=Hola%20Antonio!%20Quiero%20reservar%20mi%20consulta%20contigo" class="inline-flex bg-brand text-white font-semibold px-8 py-3.5 rounded-full">Reserva tu consulta con Antonio</a></div>
-  </div>
-</section>
-<section id="diferenciacion" class="py-20 bg-white">
-  <div class="max-w-5xl mx-auto px-5">
-    <p class="text-center text-sm font-semibold text-brand">Mi Diferencia</p>
-    <h2 class="text-center text-3xl md:text-4xl font-extrabold mt-2 mb-12">Lo que me hace único en el mundo de la asesoría nutricional</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="rounded-2xl border p-7"><h3 class="font-bold text-lg">Entiendo tu Biología, No Solo tu Dieta</h3><p class="mt-3 text-sm text-muted">Tu metabolismo cambió. Tu nutrición también debe cambiar. Te explico exactamente QUÉ hacer y POR QUÉ funciona.</p></div>
-      <div class="rounded-2xl border p-7"><h3 class="font-bold text-lg">No Eres un Número en una App</h3><p class="mt-3 text-sm text-muted">Cada ajuste se basa en CÓMO responde TU cuerpo, no en una fórmula genérica. Seguimiento humano, no algoritmos.</p></div>
-      <div class="rounded-2xl border p-7"><h3 class="font-bold text-lg">He Visto tu Historia 300 Veces</h3><p class="mt-3 text-sm text-muted">Probé todo y no funcionó nada. Lo escucho constantemente. Y sé exactamente por qué fallaron esas dietas y cómo hacerlo diferente.</p></div>
-      <div class="rounded-2xl border p-7"><h3 class="font-bold text-lg">La Regla Anti-Estrés: Máximo 20 Minutos</h3><p class="mt-3 text-sm text-muted">Si una receta requiere más tiempo o ingredientes raros, no está en tu plan. Punto. La nutrición debe facilitarte la vida, no complicarla.</p></div>
-    </div>
-  </div>
-</section>
-<section id="planes" class="pink-band py-20">
-  <div class="max-w-6xl mx-auto px-5">
-    <h2 class="text-center text-4xl font-extrabold">Elige Tu <span class="text-brand">Plan Ideal</span></h2>
-    <p class="text-center mt-2 text-sm">Añade Plan de Entrenamiento por <span class="text-brand font-semibold">+20€/mes</span></p>
-    <div id="carousel-placeholder"></div>
-  </div>
-</section>
-<section class="py-20">
-  <div class="max-w-3xl mx-auto px-5 text-center">
-    <h2 class="text-3xl font-extrabold">Ellas También Pensaban que Ya Habían Probado Todo</h2>
-    <p class="text-muted mt-3 mb-8">Mujeres reales que recuperaron el control de su cuerpo después de los 50</p>
-    <div id="carousel" class="bg-white rounded-3xl p-8 border text-left min-h-[260px]"></div>
-    <div class="flex justify-center gap-3 mt-6">
-      <button type="button" onclick="prevSlide()" class="px-4 py-2 border rounded-full text-sm">Anterior</button>
-      <button type="button" onclick="nextSlide()" class="px-4 py-2 border rounded-full text-sm">Siguiente</button>
-    </div>
-  </div>
-</section>
+<div class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between">
+<a href="#inicio" class="text-[22px] font-extrabold text-brand">AMS Nutrición</a>
+<nav class="hidden md:flex gap-8 text-[15px] text-muted"><a href="#inicio">Inicio</a><a href="#diferenciacion">Nuestra Diferencia</a><a href="#planes">Planes</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></nav>
+<a href="https://wa.me/34689849120?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20los%20planes%20de%20AMS%20Nutrici%C3%B3n" class="bg-brand text-white text-sm font-semibold px-5 py-2.5 rounded-full">Contactar</a>
+</div></header>
+<section id="inicio" class="hero-bg"><div class="max-w-4xl mx-auto px-5 pt-20 pb-24 text-center">
+<h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Finalmente, un Nutricionista que Entiende <span class="text-brand">Por Qué tu Cuerpo Ya No Responde Como Antes</span></h1>
+<p class="mt-7 text-lg text-muted">Recupera tu energía, pierde peso de forma sostenible y siéntete tú misma de nuevo. Sin dietas imposibles. Sin recetas complicadas. Solo ciencia y empatía real.</p>
+<a href="https://wa.me/34689849120?text=Hola!%20Quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20con%20AMS%20Nutrici%C3%B3n" class="mt-9 inline-flex bg-brand text-white font-semibold px-8 py-3.5 rounded-full">Agenda tu Valoración Gratuita</a>
+<p class="mt-3 text-sm italic text-muted">*La mayoría de mis clientas comienzan con el Plan Trimestral</p>
+</div></section>
+<section class="py-20"><div class="max-w-3xl mx-auto px-5 text-center">
+<h2 class="text-3xl md:text-5xl font-extrabold">Por Qué Especialicé mi Consulta en Mujeres <span class="text-brand">50+</span></h2>
+<p class="mt-8 text-muted text-lg">Después de 10 años como dietista y 5 en entorno hospitalario, descubrí algo frustrante:</p>
+<p class="mt-5 font-medium text-lg">Las mismas estrategias nutricionales que funcionaban para hombres y mujeres jóvenes, simplemente no daban resultados con mujeres en menopausia.</p>
+<p class="mt-5 text-muted text-lg">No era falta de voluntad. No era falta de esfuerzo. Era falta de comprensión sobre cómo cambia radicalmente el metabolismo femenino después de los 50.</p>
+</div>
+<div class="max-w-5xl mx-auto px-5 mt-16">
+<h3 class="text-center text-2xl font-bold mb-8">Mi Formación Especializada</h3>
+<div class="grid md:grid-cols-3 gap-5">
+<div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">Máster en Obesidad y TCA</h4><p class="mt-3 text-sm text-muted">Me especialicé en entender por qué el cuerpo se resiste y cómo trabajar CON él, no contra él. Especialmente durante cambios hormonales.</p></div>
+<div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">Máster en Nutrición Deportiva</h4><p class="mt-3 text-sm text-muted">Domino la preservación muscular, crítica después de los 50 para mantener metabolismo, fuerza y autonomía.</p></div>
+<div class="bg-white rounded-2xl p-6 border"><h4 class="font-bold text-lg">10 años de experiencia clínica</h4><p class="mt-3 text-sm text-muted">He trabajado con más de 300 pacientes. Entiendo que cada mujer es única, pero los patrones hormonales son predecibles y tratables.</p></div>
+</div></div></section>
+<section id="planes" class="pink-band py-20"><div class="max-w-6xl mx-auto px-5">
+<h2 class="text-center text-4xl font-extrabold">Elige Tu <span class="text-brand">Plan Ideal</span></h2>
+<p class="text-center mt-3 text-sm">Añade Plan de Entrenamiento por <span class="text-brand font-semibold">+20€/mes</span></p>
+<div class="grid lg:grid-cols-3 gap-5 mt-12 items-start">
+<article class="bg-white rounded-2xl p-6 border"><h3 class="text-2xl font-extrabold">Presencial</h3><div class="text-2xl font-extrabold text-brand mt-2">70€</div><div class="text-sm text-muted">Primer mes · Luego 58€/mes</div><p class="text-sm mt-3">Trimestral 140€ (47€/mes) -19% · Semestral 233€ (39€/mes) -33% · Anual 408€ (34€/mes) -41%</p><a href="https://wa.me/34689849120?text=Hola!%20Quiero%20el%20plan%20Presencial" class="mt-6 block text-center border-2 border-pink-200 text-brand font-semibold py-3 rounded-xl">¡Lo Quiero!</a></article>
+<article class="bg-white rounded-2xl p-6 border-2 border-brand relative"><div class="absolute -top-3 right-6 bg-brand text-white text-[10px] font-bold px-3 py-1 rounded-full">MÁS POPULAR</div><h3 class="text-2xl font-extrabold mt-2">Online - Conexión Directa</h3><div class="text-2xl font-extrabold text-brand mt-2">70€</div><div class="text-sm text-muted">Primer mes · Luego 58€/mes</div><p class="text-sm mt-3">Trimestral 140€ -19% · Semestral 233€ -33% · Anual 408€ -41%</p><a href="https://wa.me/34689849120?text=Hola!%20Quiero%20Online%20Conexion%20Directa" class="mt-6 block text-center bg-brand text-white font-semibold py-3 rounded-xl">Comenzar Hoy</a></article>
+<article class="bg-white rounded-2xl p-6 border"><h3 class="text-2xl font-extrabold">Online - Soporte Ágil</h3><div class="text-2xl font-extrabold text-brand mt-2">70€</div><div class="text-sm text-muted">Primer mes · Luego 47€/mes</div><p class="text-sm mt-3">Trimestral 117€ -17% · Semestral 210€ -26% · Anual 350€ -38%</p><a href="https://wa.me/34689849120?text=Hola!%20Quiero%20Soporte%20Agil" class="mt-6 block text-center border-2 border-pink-200 text-brand font-semibold py-3 rounded-xl">¡Lo Quiero!</a></article>
+</div></div></section>
+<section class="py-20"><div class="max-w-3xl mx-auto px-5 text-center">
+<h2 class="text-3xl font-extrabold">Ellas También Pensaban que Ya Habían Probado Todo</h2>
+<p class="text-muted mt-3 mb-8">Mujeres reales que recuperaron el control de su cuerpo después de los 50</p>
+<div id="carousel" class="bg-white rounded-3xl p-8 border text-left min-h-[280px]"></div>
+<div class="flex justify-center gap-3 mt-6">
+<button type="button" onclick="prevSlide()" class="px-4 py-2 border rounded-full text-sm">Anterior</button>
+<button type="button" onclick="nextSlide()" class="px-4 py-2 border rounded-full text-sm">Siguiente</button>
+</div></div></section>
 <section id="faq" class="py-16 max-w-3xl mx-auto px-5">
-  <h2 class="text-center text-3xl font-extrabold">Preguntas Frecuentes</h2>
-  <div id="faq-list" class="space-y-3"></div>
+<h2 class="text-center text-3xl font-extrabold mb-8">Preguntas Frecuentes</h2>
+<div id="faq-list" class="space-y-3"></div>
 </section>
 <section id="contacto" class="pink-band py-20 text-center px-5">
-  <h2 class="text-3xl font-extrabold">¿Listo para Transformar tu Salud?</h2>
-  <a href="https://wa.me/34689849120?text=Hola!%20Estoy%20listo%2Fa%20para%20transformar%20mi%20salud%20con%20AMS%20Nutrici%C3%B3n" class="mt-8 inline-flex bg-[#D72D74] text-white font-semibold px-8 py-3.5 rounded-full">¡Comienza tu Plan Ahora!</a>
+<h2 class="text-3xl font-extrabold">¿Listo para Transformar tu Salud?</h2>
+<a href="https://wa.me/34689849120?text=Hola!%20Estoy%20listo%2Fa%20para%20transformar%20mi%20salud%20con%20AMS%20Nutrici%C3%B3n" class="mt-8 inline-flex bg-[#D72D74] text-white font-semibold px-8 py-3.5 rounded-full">¡Comienza tu Plan Ahora!</a>
 </section>
-<footer class="bg-[#1D283A] text-white/80 py-16"><div class="max-w-6xl mx-auto px-5 text-sm">WhatsApp +34 689 849 120 · antoniomunoztsdietista@gmail.com</div></footer>
+<footer class="bg-[#1D283A] text-white/80 py-16"><div class="max-w-6xl mx-auto px-5 text-sm">WhatsApp +34 689 849 120 · antoniomunoztsdietista@gmail.com · L-V 8:00-20:00</div></footer>
 <a href="https://wa.me/34689849120" class="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center">WA</a>
 <script src="testimonios.js"></script>
 <script>
-const faqs=[{q:"Ya he probado mil dietas y ninguna funciona. ¿Por qué esto sería diferente?",a:"Las dietas estándar no están diseñadas para menopausia. Ajustamos según TU cuerpo."},{q:"¿No voy a pasar hambre?",a:"Si pasas hambre, el plan está mal diseñado."},{q:"¿Por qué el trimestral?",a:"Resultados permanentes en meses 2-3. El 78% lo elige."},{q:"Garantía de devolución",a:"Reembolso si aún no te he entregado el plan."}];
+const faqs=[{q:"Ya he probado mil dietas y ninguna funciona. ¿Por qué esto sería diferente?",a:"Exactamente por eso. Las dietas estándar no están diseñadas para metabolismos en menopausia. Ajustamos según cómo responde TU cuerpo."},{q:"¿No voy a pasar hambre? Las dietas siempre me dejan con antojos horribles",a:"Si pasas hambre, el plan está mal diseñado. Punto."},{q:"No tengo tiempo para cocinar platos complicados",a:"Regla de los 20 Minutos: si tarda más, no entra en tu plan."},{q:"¿Por qué recomiendas el plan trimestral?",a:"El metabolismo necesita tiempo. Resultados permanentes en los meses 2-3. El 78% elige el trimestral."},{q:"¿Qué incluye exactamente mi Plan Nutricional personalizado?",a:"Dieta, lista de la compra, equivalentes y medidas caseras."},{q:"¿Ofreces plan de entrenamiento?",a:"Sí, +20€/mes en cualquier modalidad."},{q:"¿El precio incluye soporte entre sesiones?",a:"Sí, WhatsApp L-V 8:00-20:00."},{q:"¿Cuánto duran las consultas?",a:"Inicial 60 min. Seguimientos 30 min."},{q:"¿Con qué frecuencia son los seguimientos?",a:"Cada dos semanas."},{q:"¿Qué necesito para la videollamada?",a:"Móvil con cámara y WhatsApp."},{q:"¿Cuándo empieza el plan?",a:"En el momento de la compra."},{q:"¿Puedo pausar el plan?",a:"Sí, 1 mes como máximo."},{q:"¿Cómo cancelo o cambio una cita?",a:"Avisa con 3 días. Si no, se consume."},{q:"¿Puedo pagar a plazos los bonos?",a:"No. Pago único."},{q:"Garantía de Compromiso: ¿cómo funciona la devolución?",a:"Reembolso íntegro si aún no te he entregado la planificación."}];
 const list=document.getElementById('faq-list');
 faqs.forEach((item,i)=>{const el=document.createElement('div');el.className='bg-white border rounded-2xl';el.innerHTML='<button class="w-full text-left px-5 py-4 font-medium" onclick="toggleFaq('+i+')">'+item.q+'</button><div id="ans-'+i+'" class="faq-a px-5 text-sm text-muted">'+item.a+'</div>';list.appendChild(el);});
 function toggleFaq(i){document.getElementById('ans-'+i).classList.toggle('open');}
